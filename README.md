@@ -26,6 +26,9 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 Using Eureka and Rest Templates complete the following microservices application:
 
 - Create a `discovery-service` that will act as Eureka Discovery Server.
+
+https://github.com/franciscofarrando/discovery-service
+
 - Create 3 services that will act as Eureka Clients:
 
   1. `student-info-service` will be responsible for holding the students’ information.
@@ -35,6 +38,8 @@ Using Eureka and Rest Templates complete the following microservices application
        - `StudentController`: that will contain a single endpoint to get a student by id.
      - **Repositories:**
        - `StudentRepository`.
+
+https://github.com/franciscofarrando/student-info-service
 
   2. `grades-data-service` will be responsible for holding the grades of each course.
      - **Models:**
@@ -50,6 +55,9 @@ Using Eureka and Rest Templates complete the following microservices application
        - `GradeRepository`.
      - **Services:**
        - `CourseService`.
+       - 
+https://github.com/franciscofarrando/grades-data-service
+
 
   3. `student-catalog-service` will be responsible for communicating with the other services and return a catalog containing the list of grades grouped by course name and showing all the students' information per grade.
      - **Models:**
@@ -58,5 +66,7 @@ Using Eureka and Rest Templates complete the following microservices application
        - All other needed models.
      - **Controllers:**
        - `CatalogController`: that will contain a single endpoint to get the students' catalog per course based on the course code.
-
+         
+https://github.com/franciscofarrando/student-catalog-service
+     
 **Note:** You can add data for each service using the `CommandLineRunner` for simpler data insertion and testing.
